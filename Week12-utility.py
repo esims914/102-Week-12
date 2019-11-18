@@ -70,4 +70,11 @@ def Union(list1,list2):
         if item not in list3:
             list3.append(item)
     return list3
-            
+
+# Intersection
+def Intersection(list1,list2):
+    ilist = []
+    for item in list1:
+        if item in list2:
+            ilist.append(item)
+    return ilist
