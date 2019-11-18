@@ -37,3 +37,16 @@ def FindWordCount(alist,astr):
                 if tempcounter == len(astr):
                     numb += 1
     return numb
+
+def ScoreFinder(playerlist, scorelist, player):
+    found = False
+    loc = -1
+    for playername in playerlist:
+        loc += 1
+        if playername.upper() == player.upper():
+            found = True
+            print("OUTPUT " + playername + " got a score of " + str(scorelist[loc]))
+            break
+    if found == False:
+        print("OUTPUT player not found")
+            
