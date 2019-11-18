@@ -1,7 +1,14 @@
+#   https://github.com/esims914/102-Week-12
+#   Eugene (Trey) Sims
+#   ​CSCI 102 – Section E
+#   Week 11 - Part A
 
+
+# Print Output
 def PrintOutput(string):
     print("OUTPUT " + string)
-    
+
+# Load File
 def LoadFile(fileloc):
     f = open(fileloc)
     alist = []
@@ -10,6 +17,7 @@ def LoadFile(fileloc):
     return alist
     f.close()
 
+# Update String
 def UpdateString(string, char, pos):
     newstr = ''
     for i in range(pos):
@@ -19,6 +27,7 @@ def UpdateString(string, char, pos):
         newstr += string[i]
     return newstr
 
+# Find Word Count
 def FindWordCount(alist,astr):
     numb = 0
     for i in range(len(astr)):
@@ -38,6 +47,7 @@ def FindWordCount(alist,astr):
                     numb += 1
     return numb
 
+# Score Finder
 def ScoreFinder(playerlist, scorelist, player):
     found = False
     loc = -1
@@ -49,4 +59,6 @@ def ScoreFinder(playerlist, scorelist, player):
             break
     if found == False:
         print("OUTPUT player not found")
+
+        
             
